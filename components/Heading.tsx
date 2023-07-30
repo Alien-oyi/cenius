@@ -1,11 +1,10 @@
 import { cn } from "@/lib/utils";
-import { XIcon } from "lucide-react";
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
+import { LucideIcon } from "lucide-react";
 
 interface HeadingProps {
     title: string;
     description: string;
-    icon?: Icon;
+    icon: LucideIcon;
     iconColor?: string;
     bgColor?: string;
 }
@@ -22,7 +21,7 @@ export const Heading = ({
         px-4 lg:px-8 flex
         items-center gap-x-3 mb-8">
             <div className={cn("p-2 w-fit rouned-md", bgColor)}>
-                <XIcon className={cn("w-10 h-10", iconColor)} />
+                <Icon className={cn("w-10 h-10", iconColor)} />
             </div>
             <div>
                 <h2 className="text-3xl font-bold">
